@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/1293/PNG/512/2363208-app-chat-discord-game-gamer-social_85471.png"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Todocord</title>
   </head>
   <body>
-    <script src="src/app.js"></script>
+    <form id="login-form">
+      <h2 id="login-form__title">Todocord 에 오신것을 환영해요!</h2>
+      <input
+        id="login-form__username"
+        type="text"
+        placeholder="사용자명(8글자 이내)"
+        maxlength="8"
+        autocomplete="off"
+        required
+      />
+      <button id="login-form__btn">Log in</button>
+    </form>
+    <script src="src/js/login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1f609d41d.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

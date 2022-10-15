@@ -1,0 +1,70 @@
+@keyframes form-ani {
+  100% {
+    transform: scaleX(0) scaleY(0);
+  }
+}
+
+#login-form {
+  width: 30%;
+  height: 50%;
+  background-color: #2f3136;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.form--ani {
+  animation: form-ani 1s forwards;
+}
+
+#login-form__title {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5vw;
+}
+
+#login-form__username {
+  background-color: #202225;
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 8%;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#login-form__btn {
+  font-weight: bold;
+  background-color: #7289da;
+  width: 20%;
+  height: 10%;
+  border: none;
+  border-radius: 5px;
+}
+
+#login-form__btn:hover {
+  color: white;
+}
+
+#login-form__btn:active {
+  transform: scaleX(0.9) scaleY(0.9);
+}
+
+@keyframes rotateIcon {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.login-form__icon {
+  font-size: 2vw;
+  color: white;
+  animation: rotateIcon 2s;
+}
+
+.icon--green {
+  color: #54d29e;
+}
