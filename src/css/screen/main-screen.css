@@ -1,0 +1,46 @@
+@keyframes main-screen-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#main-screen {
+  display: grid;
+  grid-template-columns: 1fr 3fr 6fr 3fr 2fr 1fr;
+  grid-template-rows: 1fr 29fr;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  position: absolute;
+  animation: main-screen-opacity 3s ease-in-out;
+  animation-delay: 4.5s;
+}
+
+.main-screen__title {
+  cursor: default;
+  grid-column: span;
+  grid-row: span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-gray);
+  font-weight: bold;
+}
+
+#log-out {
+  grid-column: span;
+  grid-row: span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-gray);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#log-out:hover {
+  color: white;
+}

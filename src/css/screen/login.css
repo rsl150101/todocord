@@ -7,7 +7,7 @@
 #login-form {
   width: 30%;
   height: 50%;
-  background-color: #2f3136;
+  background-color: var(--dark-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 #login-form__username {
-  background-color: #202225;
+  background-color: var(--black);
   border: none;
   outline: none;
   width: 80%;
