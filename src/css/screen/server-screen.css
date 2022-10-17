@@ -1,0 +1,55 @@
+#server-screen {
+  grid-column: 2 span;
+  grid-row: 1 span;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 5fr 4fr 2fr;
+  grid-template-rows: 1fr 20fr 1fr;
+  border-top-left-radius: 10px;
+}
+
+#server__name,
+#channel-page,
+#date {
+  border-bottom: solid 2px var(--black);
+}
+
+#server__name {
+  background-color: var(--dark-gray);
+  color: white;
+  border-top-left-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+#channel-page {
+  grid-column: 2 span;
+  background-color: var(--gray);
+}
+
+#date {
+  grid-column: 1span;
+  background-color: var(--gray);
+}
+
+#channel-list {
+  background-color: var(--dark-gray);
+}
+
+#channel-screen {
+  grid-column: 2 span;
+  grid-row: 2 span;
+  background-color: var(--gray);
+}
+
+#user-list {
+  grid-row: 2 span;
+  background-color: var(--light-black);
+}
+
+#user {
+  background-color: var(--light-black);
+}

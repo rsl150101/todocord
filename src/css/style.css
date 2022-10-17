@@ -8,6 +8,7 @@
 /* screen */
 @import "screen/login.css";
 @import "screen/main-screen.css";
+@import "screen/server-screen.css";
 
 html,
 body {
@@ -22,6 +23,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .hidden {

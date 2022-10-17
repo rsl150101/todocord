@@ -1,5 +1,8 @@
 :root {
-  --light-gray: #35393e;
+  --gray: #36393f;
+  --light-gray: #6c757d;
   --dark-gray: #2f3136;
   --black: #202225;
+  --light-black: #292b2f;
+  --discord-color: #535fee;
 }

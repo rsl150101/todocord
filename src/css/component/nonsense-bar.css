@@ -1,5 +1,5 @@
 #nonsense-bar {
-  grid-column: 4 span;
+  grid-column: 1 span;
   grid-row: 1 span;
   color: white;
   display: flex;
@@ -23,4 +23,5 @@
 
 #nonsense-bar__text {
   animation: text-opacity 8s ease-in-out infinite;
+  white-space: nowrap;
 }
