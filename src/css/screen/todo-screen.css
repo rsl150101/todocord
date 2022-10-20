@@ -1,0 +1,76 @@
+#todo-list {
+  width: 100%;
+  top: 14.5%;
+  height: 79.5%;
+  position: absolute;
+  padding: 0px 10px 0px 20px;
+  margin: 5px 0 5px 0;
+  overflow-y: scroll;
+}
+
+/*스크롤바*/
+#todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/*스크롤바의 드래그 핸들*/
+#todo-list::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+/*스크롤바 트랙*/
+#todo-list::-webkit-scrollbar-track {
+  background-color: var(--dark-gray);
+  border-radius: 5px;
+}
+
+#todo-list li {
+  height: 10%;
+  color: white;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#todo-list li:hover {
+  background-color: var(--dark-gray);
+}
+
+input[type="checkbox"],
+#todo-list li button {
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#todo-list li span {
+  display: flex;
+  align-items: center;
+}
+
+.text--line-through {
+  text-decoration: line-through;
+}
+
+#todo-form {
+  grid-row: 3/-1;
+  display: flex;
+  justify-content: center;
+}
+#todo-form input[type="text"] {
+  width: 97%;
+  height: 60%;
+  border: none;
+  outline: none;
+  background-color: #40444b;
+  color: white;
+  border-radius: 5px;
+}
+
+#todo-form input[type="submit"] {
+  display: none;
+}

@@ -1,5 +1,5 @@
 #server-screen {
-  grid-column: 2 span;
+  grid-column: 3 span;
   grid-row: 1 span;
   width: 100%;
   display: grid;
@@ -43,6 +43,14 @@
   grid-column: 2 span;
   grid-row: 2 span;
   background-color: var(--gray);
+  display: grid;
+  grid-template-rows: 3fr 17fr 1fr;
+  position: relative;
+  height: 100%;
+}
+
+#channel-screen__date {
+  background-color: white;
 }
 
 #user-list {

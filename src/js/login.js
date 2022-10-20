@@ -3,7 +3,8 @@ const logInFormTitle = document.getElementById("login-form__title");
 const logInFormUsername = document.getElementById("login-form__username");
 const logInFormBtn = document.getElementById("login-form__btn");
 const mainScreen = document.getElementById("main-screen");
-const logOut = document.getElementById("log-out");
+const logOut = document.getElementById("logout-btn");
+const user = document.getElementById("user");
 const HIDDEN = "hidden";
 
 //* 로그인 함수
@@ -30,6 +31,7 @@ function logIn(username) {
   setTimeout(() => {
     logInForm.remove();
     mainScreen.classList.remove(HIDDEN);
+    user.textContent = username;
   }, 4500);
 }
 
@@ -47,7 +49,9 @@ function handleLoginBtn(event) {
 }
 
 //* 로그아웃 함수
-function handleLogOut() {}
+function handleLogOut() {
+  //? 모든 기능 완성 후에 추가할 예정
+}
 
 //* 이벤트
 logInFormBtn.addEventListener("click", handleLoginBtn);
