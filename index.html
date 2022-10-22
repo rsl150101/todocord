@@ -26,9 +26,11 @@
     </form>
     <div id="main-screen" class="hidden">
       <h5 class="main-screen__title">Todocord</h5>
+      <div></div>
       <div id="nonsense-bar">
         <h5 id="nonsense-bar__text"></h5>
       </div>
+      <div></div>
       <div id="logout-btn">Logout</div>
       <nav id="main-screen__server">
         <a><i class="fa-brands fa-discord"></i></a>
@@ -39,23 +41,30 @@
       <div id="server-screen">
         <h3 id="server__name">Nomard Coders</h3>
         <div id="channel-page"></div>
-        <div id="date"></div>
+        <div id="clock"></div>
         <ul id="channel-list"></ul>
         <div id="channel-screen">
-          <div id="channel-screen__date"></div>
+          <div id="channel-screen__date">
+            <h3 id="today"></h3>
+            <div id="weather">
+              <img id="weather__icon" />
+            </div>
+            <div id="city"></div>
+          </div>
           <ul id="todo-list"></ul>
           <form id="todo-form">
             <input type="text" maxlength="100" required />
             <input type="submit" />
           </form>
         </div>
-        <ul id="day-list"></ul>
+        <ul id="user-list"></ul>
         <div id="user"></div>
       </div>
     </div>
     <script src="src/js/login.js"></script>
     <script src="src/js/nonsense.js"></script>
     <script src="src/js/todo.js"></script>
+    <script src="src/js/date-weather.js"></script>
     <script
       src="https://kit.fontawesome.com/d1f609d41d.js"
       crossorigin="anonymous"

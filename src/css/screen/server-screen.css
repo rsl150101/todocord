@@ -1,5 +1,5 @@
 #server-screen {
-  grid-column: 3 span;
+  grid-column: 5 span;
   grid-row: 1 span;
   width: 100%;
   display: grid;
@@ -10,7 +10,7 @@
 
 #server__name,
 #channel-page,
-#date {
+#clock {
   border-bottom: solid 2px var(--black);
 }
 
@@ -30,9 +30,13 @@
   background-color: var(--gray);
 }
 
-#date {
-  grid-column: 1span;
+#clock {
   background-color: var(--gray);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 #channel-list {
@@ -50,7 +54,21 @@
 }
 
 #channel-screen__date {
-  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+#weather__icon {
+  width: 30px;
+  height: 30px;
+}
+
+#city {
+  font-size: 10px;
 }
 
 #user-list {
