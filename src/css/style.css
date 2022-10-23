@@ -1,5 +1,6 @@
 /* component */
 @import "component/nonsense-bar.css";
+@import "component/channel-item.css";
 
 /* config */
 @import "config/reset.css";

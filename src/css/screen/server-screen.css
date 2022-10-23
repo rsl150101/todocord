@@ -28,6 +28,53 @@
 #channel-page {
   grid-column: 2 span;
   background-color: var(--gray);
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 20fr 3fr;
+  align-items: center;
+  color: var(--light-gray);
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#channel-page i:first-child {
+  text-align: center;
+}
+
+#channel-page i:nth-child(2) {
+  text-align: center;
+}
+
+.fa-thumbtack {
+  transform: rotateZ(45deg);
+}
+
+#channel-page h3 {
+  color: white;
+  text-align: center;
+}
+#column-bar {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#column-bar div {
+  width: 1px;
+  height: 70%;
+  background-color: var(--light-gray);
+}
+
+#channel-page h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#channel-page__icons {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-right: 5px;
 }
 
 #clock {
@@ -41,6 +88,50 @@
 
 #channel-list {
   background-color: var(--dark-gray);
+  padding: 0 5px;
+  display: grid;
+  grid-template-rows: min-content;
+}
+#channel-list li {
+  margin-top: 10px;
+}
+
+#level {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15px 20px;
+  border-bottom: 1px solid var(--gray);
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--light-gray);
+  align-items: flex-end;
+}
+
+#level span:first-child {
+  color: white;
+  margin-left: 5px;
+}
+
+#level span:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+#row-bar {
+  grid-column: 2 span;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+#row-bar div {
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 2px;
 }
 
 #channel-screen {
@@ -74,8 +165,39 @@
 #user-list {
   grid-row: 2 span;
   background-color: var(--light-black);
+  overflow-y: hidden;
+}
+
+#ad__img {
+  width: 100%;
+  height: 100%;
 }
 
 #user {
   background-color: var(--light-black);
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  font-size: 20px;
+  align-items: center;
+  color: white;
+}
+
+.user__avatar {
+  margin-left: 5px;
+}
+
+.user__avatar i {
+  background-color: #f9c23c;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#userId {
+  padding-left: 5px;
+}
+
+.user-icons {
+  color: var(--light-gray);
+  display: flex;
+  justify-content: space-evenly;
 }

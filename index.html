@@ -34,15 +34,130 @@
       <div id="logout-btn">Logout</div>
       <nav id="main-screen__server">
         <a><i class="fa-brands fa-discord"></i></a>
-        <a></a>
-        <a></a>
-        <a></a>
+        <a>
+          <img src="https://www.filepicker.io/api/file/Tu60vRVBQGablw9OAOZz" />
+        </a>
+        <a>
+          <img
+            src="https://www.greenart.co.kr/upimage/new_editor/20212/20210201112021.jpg"
+          />
+        </a>
+        <a>
+          <img src="https://bunny.jjalbot.com/2022/02/d8RfM5c0g.jpeg" />
+        </a>
       </nav>
       <div id="server-screen">
         <h3 id="server__name">Nomard Coders</h3>
-        <div id="channel-page"></div>
+        <div id="channel-page">
+          <i class="fa-solid fa-hashtag"></i>
+          <h3>📌일일-스프린트</h3>
+          <div id="column-bar">
+            <div></div>
+          </div>
+          <h4>Daily. 매일 할일 목록을 쓰는 곳 입니다!</h4>
+          <div id="channel-page__icons">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-thumbtack"></i>
+            <i class="fa-solid fa-user-group"></i>
+          </div>
+        </div>
         <div id="clock"></div>
-        <ul id="channel-list"></ul>
+        <ul id="channel-list">
+          <li id="level">
+            <span>목표: 레벨1</span>
+            <span
+              >부스트 0/2&nbsp;
+              <i class="fa-solid fa-angle-right"></i>
+            </span>
+            <div id="row-bar">
+              <div></div>
+            </div>
+          </li>
+          <li id="notice" class="channel-item">
+            <div class="item__title">
+              <i class="fa-solid fa-angle-down"></i>
+              <span>공지사항</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>📣공지사항</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-square-check"></i>
+              <span>📚커뮤니티-규칙</span>
+            </div>
+          </li>
+          <li id="community" class="channel-item">
+            <div class="item__title">
+              <i class="fa-solid fa-angle-down"></i>
+              <span>커뮤니티</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>🙌자기소개</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>💬일상</span>
+            </div>
+            <div class="item__thread">
+              <i class="fa-solid fa-l"></i>
+              <div>왜버그가없조(group_7)</div>
+            </div>
+            <div class="item__menu item__menu--selected">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>📌일일-스프린트</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>📌주간회고</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>🎵노동요</span>
+            </div>
+          </li>
+          <li id="programming" class="channel-item">
+            <div class="item__title">
+              <i class="fa-solid fa-angle-down"></i>
+              <span>프로그래밍</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-regular fa-comments"></i>
+              <span>💻html-css-help</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-regular fa-comments"></i>
+              <span>💻javascript-help</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>참고자료-링크</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-hashtag"></i>
+              <span>사이드-프로젝트</span>
+            </div>
+          </li>
+          <li id="voice" class="channel-item">
+            <div class="item__title">
+              <i class="fa-solid fa-angle-down"></i>
+              <span>VOICE 채널</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>🎶노동요</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>💻모여서-각자-코딩</span>
+            </div>
+            <div class="item__menu">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>🎤자유로운 토론 채널</span>
+            </div>
+          </li>
+        </ul>
         <div id="channel-screen">
           <div id="channel-screen__date">
             <h3 id="today"></h3>
@@ -57,14 +172,27 @@
             <input type="submit" />
           </form>
         </div>
-        <ul id="user-list"></ul>
-        <div id="user"></div>
+        <section id="user-list">
+          <img id="ad__img" />
+        </section>
+        <div id="user">
+          <div class="user__avatar">
+            <i class="fa-brands fa-discord"></i>
+          </div>
+          <span id="userId"></span>
+          <div class="user-icons">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-gear"></i>
+          </div>
+        </div>
       </div>
     </div>
     <script src="src/js/login.js"></script>
     <script src="src/js/nonsense.js"></script>
     <script src="src/js/todo.js"></script>
     <script src="src/js/date-weather.js"></script>
+    <script src="src/js/random-img.js"></script>
     <script
       src="https://kit.fontawesome.com/d1f609d41d.js"
       crossorigin="anonymous"

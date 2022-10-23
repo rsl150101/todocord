@@ -4,7 +4,7 @@ const logInFormUsername = document.getElementById("login-form__username");
 const logInFormBtn = document.getElementById("login-form__btn");
 const mainScreen = document.getElementById("main-screen");
 const logOutBtn = document.getElementById("logout-btn");
-const user = document.getElementById("user");
+const user = document.getElementById("userId");
 
 const HIDDEN = "hidden";
 
